@@ -7,7 +7,7 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a>
+      <a href="../../index2.html" class="h1"><b>Panadería</b></a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Iniciar Sesión</p>
