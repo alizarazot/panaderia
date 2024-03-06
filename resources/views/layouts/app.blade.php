@@ -39,9 +39,9 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
+    @include('layouts.partial.header')
     @yield('content')
-
-
+    @include('layouts.partial.footer')
 
 <!-- jQuery -->
 <script src="{{asset('backend/plugins/jquery/jquery.min.js')}}"></script>
