@@ -40,6 +40,7 @@
 
 <body class="hold-transition sidebar-mini layout-fixed">
     @include('layouts.partial.header')
+    @include('layouts.partial.sidebar')
     @yield('content')
     @include('layouts.partial.footer')
 
