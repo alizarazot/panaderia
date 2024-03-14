@@ -1,4 +1,4 @@
-@extends('layouts.appregister')
+@extends('layouts.applogin')
 
 @section('content')
     <div class="register-box">
