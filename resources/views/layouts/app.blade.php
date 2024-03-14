@@ -78,6 +78,8 @@
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{ asset('backend/dist/js/pages/dashboard.js') }}"></script>
 
+    <script src="https://kit.fontawesome.com/b479edefa4.js" crossorigin="anonymous"></script>
+
     @stack('scripts')
 </body>
 
