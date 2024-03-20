@@ -12,12 +12,15 @@ return new class extends Migration {
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
 
             $table->string('name');
-            $table->text('description');
             $table->decimal('price', 8, 2);
             $table->integer('quantity');
+
+            $table->unsignedBigInteger('provider_id');
+            $table->foreign('provider_id')
+                ->references('id')
+                ->on('providers');
         });
     }
 

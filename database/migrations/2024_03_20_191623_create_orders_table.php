@@ -12,18 +12,16 @@ return new class extends Migration {
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
-
-            $table->dateTime('date');
 
             $table->unsignedBigInteger('client_id');
             $table->foreign('client_id')
                 ->references('id')
                 ->on('clients');
-            $table->unsignedBigInteger('product_id');
-            $table->foreign('product_id')
+
+            $table->unsignedBigInteger('order_detail_id');
+            $table->foreign('order_detail_id')
                 ->references('id')
-                ->on('products');
+                ->on('order_details');
         });
     }
 
