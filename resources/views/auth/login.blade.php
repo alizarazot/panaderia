@@ -6,7 +6,9 @@
     <div class="login-box">
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
-            <div class="card-header text-center">
+            <div class="card-header text-center"
+                style="display: grid; grid-template-columns: 1fr 35px 1fr 1fr; gap: 10px; padding-top: 20px">
+                <img style="height: 35px; grid-column-start: 2" src="{{ asset('favicon.ico') }}">
                 <a href="../../index2.html" class="h1"><b>Panadería</b></a>
             </div>
             <div class="card-body">
