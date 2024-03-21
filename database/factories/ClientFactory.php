@@ -19,6 +19,9 @@ class ClientFactory extends Factory
         return [
             'name'=>$this->faker->name,
             'email'=>$this->faker->email,
+            'phone'=>$this->faker->phoneNumber,
+            'address'=>$this->faker->address,
+            'city'=> $this->faker->city,
         ];
     }
 }

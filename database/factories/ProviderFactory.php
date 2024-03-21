@@ -18,7 +18,10 @@ class ProviderFactory extends Factory
     {
         return [
             'name'=>$this->faker->name,
-            'email'=> $this->faker->unique()->safeEmail,
+            'email'=>$this->faker->email,
+            'phone'=>$this->faker->phoneNumber,
+            'address'=>$this->faker->address,
+            'city'=> $this->faker->city,
         ];
     }
 }
