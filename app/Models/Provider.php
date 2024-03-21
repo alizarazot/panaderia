@@ -8,4 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class Provider extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'photo',
+        'address',
+        'city',
+        'phone',
+        'email',
+    ];
+
+    protected $guarded = ['id'];
+
+    public function products() {
+        return $this->hasMany(Product::class);
+    }
 }
