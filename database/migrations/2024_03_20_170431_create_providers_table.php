@@ -14,10 +14,10 @@ return new class extends Migration {
             $table->id();
 
             $table->string('name');
-            $table->string('photo');
-            $table->string('address');
-            $table->string('city');
-            $table->string('phone');
+            $table->string('photo')->nullable();
+            $table->string('address')->nullable();
+            $table->string('city')->nullable();
+            $table->string('phone')->nullable();
             $table->string('email');
         });
     }

@@ -14,9 +14,9 @@ return new class extends Migration {
             $table->id();
 
             $table->string('name');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->decimal('price', 8, 2);
-            $table->integer('quantity');
+            $table->integer('quantity')->default(0);
 
             $table->unsignedBigInteger('provider_id');
             $table->foreign('provider_id')
