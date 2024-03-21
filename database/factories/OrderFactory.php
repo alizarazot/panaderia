@@ -17,7 +17,7 @@ class OrderFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'client_id'=>\App\Models\Client::factory(),
         ];
     }
 }
