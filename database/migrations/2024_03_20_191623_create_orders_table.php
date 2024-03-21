@@ -17,11 +17,6 @@ return new class extends Migration {
             $table->foreign('client_id')
                 ->references('id')
                 ->on('clients');
-
-            $table->unsignedBigInteger('order_detail_id');
-            $table->foreign('order_detail_id')
-                ->references('id')
-                ->on('order_details');
         });
     }
 
